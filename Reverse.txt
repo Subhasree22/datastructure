@@ -1,0 +1,19 @@
+package com.ds;
+import java.util.*;
+
+public class Reverse {
+	public static void main(String[] args) {
+	
+		String rev="";
+		char ch;
+		System.out.print("Please enter the string which you want to reverse:");
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		System.out.println("The entered string is:"+str);
+		for(int i=0; i<str.length() ; i++) {
+			ch =str.charAt(i);
+			rev = ch+rev;
+		}
+		System.out.print("The reverse of your entered string is:" +rev);
+	}
+}
